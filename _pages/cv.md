@@ -9,8 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-## Past occupation (incomplete)
+## Occupation
 
+- Doctoral assistant at **EPFL** (2023-present)
 - Simluation engineer and management member at **Team Tumbleweed** (2021-2024)
 - Visiting associate at **Boston Consulting Group** (2021)
 - Systems engineer at **RUAG Space** (2020)
@@ -20,7 +21,6 @@ redirect_from:
 - Data analyst at **KPMG** (2017)
 
 
-<br />
 
 ## Education
 
