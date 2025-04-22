@@ -9,56 +9,26 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Past occupation (incomplete)
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+- Simluation engineer and management member at **Team Tumbleweed** (2021-2024)
+- Visiting associate at **Boston Consulting Group** (2021)
+- Systems engineer at **RUAG Space** (2020)
+- CEO for One Month at **Adecco Group** (2020)
+- Vorstand and Consultant at **icons - consulting by students** (2017-2020)
+- Research intern at **National University of Sciences and Technology, Islamabad** (2019)
+- Data analyst at **KPMG** (2017)
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+<br />
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Education
+
+- Doctoral studies in Mathematics at **EPFL** (2023-present)
+- MSc. Computational Science and Engineering at **TU Wien** (2021-2023)
+- Master’s Thesis in Applied Mathematics at **ETH Zürich** (2022-2023)
+- MSc. exchange in Applied and Computational Mathematics at **KTH Stockholm** (2022)
+- BSc. studies in Physics at **TU Wien** (discontinued before graduation)
+- BSc. Mechanical Engineering and Management at **TU Wien** (2016-2020)
+
+
