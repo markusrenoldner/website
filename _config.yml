@@ -28,8 +28,8 @@ author:
   bio              : "PhD student in Mathematics"
   location         : "Lausanne"
   employer         : "EPFL"
-  uri              : "https://www.epfl.ch/" # URL
-  email            : "none@example.org" 
+  uri              : #"https://www.epfl.ch/" # URL
+  email            : "markus.renoldner@epfl.ch" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
