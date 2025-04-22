@@ -1,8 +1,14 @@
+---
+layout: archive
+title: "Publications"
+permalink: /cv/
+author_profile: true
+redirect_from:
+  - /resume
+---
 
 
 
-
-# Research and publications
 
 **A semi-stochastic, numeric simulation tool in model based systems engineering for tumbleweed rovers** (2023)\
 **Renoldner, M.**, Rothenbuchner, J., Cohen, L., Kapadia, M., Mahmood, F., & Vicovan, D.\
