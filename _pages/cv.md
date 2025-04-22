@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-## Occupation
+## Professional experience
 
 - Doctoral assistant at **EPFL** (2023-present)
 - Simluation engineer and management member at **Team Tumbleweed** (2021-2024)
