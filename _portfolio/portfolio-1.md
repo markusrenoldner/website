@@ -1,10 +1,13 @@
 ---
-title: 'Periodic poisson problem in FEniCSX'
+title: 'Periodic poisson problem in FEniCSx'
 excerpt: "Solving the poisson problem on a periodic mesh in FEniCSX <br/><img src='/images/poisson_periodic_scalar-1.png'>"
 collection: portfolio
 ---
 
-Solving the Poisson Problem with Periodic Boundary Conditions in FEniCSx
+Solving the Poisson Problem with Periodic Boundary Conditions in FEniCSx. For this we use the MultiPointConstraint library, which is built on top of FEniCSx.
+
+- https://jsdokken.com/dolfinx_mpc/
+- https://docs.fenicsproject.org/
 
 In this example, we solve the Poisson problem on a 2D unit square mesh using periodic boundary conditions in the x-direction and homogeneous Dirichlet conditions in the y-direction.
 
@@ -18,9 +21,18 @@ $$-\Delta u = f,$$
 
 in the weak sense. 
 
+FEniCSx is still under development, and new versions are often not 100% backwards compatible. The following code was developed for dolfinx version 0.9.0. This can be checked using 
 
+```
+python3 -c "import dolfinx; print(dolfinx.__version__)"
+```
+or in a python file 
+```
+import dolfinx
+print(dolfinx.__version__)
+```
 
-
+We import the necessary modules:
 ```
 from mpi4py import MPI
 from petsc4py import PETSc
@@ -42,7 +54,11 @@ from ufl import (
     sin,
 )
 from dolfinx_mpc import LinearProblem, MultiPointConstraint
+```
 
+Next, we define the mesh
+
+```
 # Mesh resolution
 NX = 50
 NY = 100
@@ -118,3 +134,12 @@ plotter.save_graphic("poisson_periodic_scalar.pdf")
 plotter.show()
 
 ```
+
+
+The code produces the following image:
+
+<br/><img src='/images/poisson_periodic_scalar-1.png'>
+
+
+
+
