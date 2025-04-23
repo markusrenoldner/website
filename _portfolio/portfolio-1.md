@@ -14,7 +14,7 @@ In this example, we solve the Poisson problem on a 2D unit square mesh using per
 
 We encode the periodicity in the definition of the domain:
 
-\\[\Omega = (0,1)/\mathbb{Z} \times (0,1)\subset\mathbb{R}^2. \\]
+\\[\Omega = \mathbb{R}/\mathbb{Z} \times (0,1)\subset\mathbb{R}^2. \\]
 
 Given \\(f:\Omega\to \mathbb{R}\\), we seek the solution \\(u\in H^1_0(\Omega)\\) such that 
 
