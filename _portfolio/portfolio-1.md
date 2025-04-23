@@ -1,6 +1,7 @@
 ---
 title: 'Periodic poisson problem in FEniCSx'
-excerpt: "Solving the poisson problem on a periodic mesh in FEniCSX <br/><img src='/images/poisson_periodic_scalar-1.png'>"
+excerpt: "Solving the poisson problem on a periodic mesh in FEniCSX <br/><img src='/images/poisson_periodic_scalar-1.png' style='max-width: 100%; height: auto; max-height: 200px;'>"
+
 collection: portfolio
 ---
 
