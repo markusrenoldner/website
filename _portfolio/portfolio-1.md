@@ -7,7 +7,7 @@ collection: portfolio
 Solving the Poisson Problem with Periodic Boundary Conditions in FEniCSx. For this we use the MultiPointConstraint library, which is built on top of FEniCSx.
 
 - [https://jsdokken.com/dolfinx_mpc/](https://jsdokken.com/dolfinx_mpc/)
-- https://docs.fenicsproject.org/
+- [https://docs.fenicsproject.org/](https://docs.fenicsproject.org/)
 
 In this example, we solve the Poisson problem on a 2D unit square mesh using periodic boundary conditions in the x-direction and homogeneous Dirichlet conditions in the y-direction.
 
@@ -15,7 +15,7 @@ We encode the periodicity in the definition of the domain:
 
 \\[\Omega = (0,1)/\mathbb{Z} \times (0,1)\subset\mathbb{R}^2. \\]
 
-Given $f:\Omega\to \mathbb{R}$, we seek the solution $u\in H^1_0(\Omega)$ such that 
+Given \\(f:\Omega\to \mathbb{R}\\), we seek the solution \\(u\in H^1_0(\Omega)\\) such that 
 
 $$-\Delta u = f,$$
 
