@@ -7,8 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Math test:
+Welcome to my homepage. Here you can find information about 
 
-$$\int_\Omega \nabla u\cdot\nabla v = \int_\Omega fv \forall v\in\mathcal{D}.$$
+- my research and my publications
+- notes on mathematical and scientific topics that are both useful and about which I did not manage to find satisfactory information myself
+- my CV, i.e. my educational background and my professional experience.
 
-PLACEHOLDER
