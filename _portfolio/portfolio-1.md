@@ -141,6 +141,5 @@ The code produces the following image:
 
 <br/><img src='/images/poisson_periodic_scalar-1.png'>
 
-
-Download the `.py` file: [https://www.markusrenoldner.com/files/poisson-periodic_scalar.py](https://www.markusrenoldner.com/files/poisson-periodic_scalar.py)
+The `.py` file can be downloaded [here](https://www.markusrenoldner.com/files/poisson-periodic_scalar.py).
 
