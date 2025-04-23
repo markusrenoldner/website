@@ -20,11 +20,11 @@ main:
   #- title: "Teaching"
   #  url: /teaching/    
     
-  #- title: "Portfolio"
-  #  url: /portfolio/
-        
   - title: "Scientific notes"
-    url: /year-archive/
+    url: /portfolio/
+        
+  #- title: "Scientific notes"
+  #  url: /year-archive/
     
   - title: "CV"
     url: /cv/
