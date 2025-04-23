@@ -1,6 +1,6 @@
 ---
 title: 'Periodic poisson problem in FEniCSx'
-excerpt: "Solving the poisson problem on a periodic mesh in FEniCSX <br/><img src='/images/poisson_periodic_scalar-1.png' style='max-width: 100%; height: auto; max-height: 100px;'>"
+excerpt: "Solving the poisson problem on a periodic mesh in FEniCSX <br/><img src='/images/poisson_periodic_scalar-1.png' style='max-width: 100%; height: auto; max-height: 200px;'>"
 
 collection: portfolio
 ---
@@ -16,7 +16,11 @@ We encode the periodicity in the definition of the domain:
 
 \\[\Omega = \mathbb{R}/\mathbb{Z} \times (0,1)\subset\mathbb{R}^2. \\]
 
-Given \\(f:\Omega\to \mathbb{R}\\), we seek the solution \\(u\in H^1_0(\Omega)\\) such that 
+Given \\(f:\Omega\to \mathbb{R}\\), defined by
+
+$$f(x, y) = x \sin(5\pi y) + \exp\left(-\frac{(x - 0.9)^2 + (y - 0.5)^2}{0.02}\right)$$
+
+we seek the solution \\(u\in H^1_0(\Omega)\\) such that 
 
 $$-\Delta u = f,$$
 
