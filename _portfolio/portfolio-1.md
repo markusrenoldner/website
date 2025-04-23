@@ -1,7 +1,14 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: 'Periodic poisson problem in FEniCSX'
+excerpt: "Solving the poisson problem on a periodic mesh in FEniCSX <br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+Find \\(u\in H^1_0(\Omega)\\), \\(\Omega\subset\mathbb{R}^n\\), such that for all \\(\phi\in\mathcal{D}(\Omega)\\) we have
+
+$$\int_\Omega \nabla u\cdot\nabla \phi = \int_\Omega f \phi.$$
+
+
+```
+import fenicsx
+```
