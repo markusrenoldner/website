@@ -26,8 +26,8 @@ author:
   name             : "Markus Renoldner"
   pronouns         : # example: "she/her"  
   bio              : "PhD student in Mathematics"
-  location         : "Lausanne"
-  employer         : "EPFL"
+  location         : #"Lausanne"
+  employer         : #"EPFL"
   uri              : #"https://www.epfl.ch/" # URL
   email            : "markus.renoldner@epfl.ch" 
 
