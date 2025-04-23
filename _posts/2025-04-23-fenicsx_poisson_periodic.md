@@ -8,7 +8,6 @@ tags:
 
 
 
-# Solving a periodic poisson problem in FEniCSX
 
 Find \\(u\in H^1_0(\Omega)\\), \\(\Omega\subset\mathbb{R}^n\\), such that for all \\(\phi\in\mathcal{D}(\Omega)\\) we have
 
