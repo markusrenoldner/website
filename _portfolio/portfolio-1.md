@@ -95,10 +95,11 @@ bcs = [bc]
 
 We want periodic boundary conditions at \\(x=0\\) and \\(x=1\\). This is done in three steps:
 
-1. Find the region
+1. Find the relevant part of the domain (here we choose \\(x=1\\))
+2. Define the "multipoint constraint", i.e. define happens at that part of the boundary. In our case, we want that all points with \\(x=1\\) should be identified with \\(x=0\\)
+3. Define the `MultiPointConstraint` object, which contains the above information and will be used in the assembly process.
 
 ```
-
 # Define periodic boundary and mapping
 def periodic_boundary(x):
     return np.isclose(x[0], 1, atol=tol)
@@ -115,6 +116,9 @@ mpc = MultiPointConstraint(V)
 mpc.create_periodic_constraint_geometrical(V, periodic_boundary, periodic_relation, bcs)
 mpc.finalize()
 
+```
+The rest is standard again, with the only difference, that we use the `LinearProblem` command from the MPC library, which accepts the `m̀pc` as an argument.
+```
 # Define variational problem
 u = TrialFunction(V)
 v = TestFunction(V)
@@ -131,21 +135,19 @@ rhs = inner(f, v) * dx
 petsc_options={"ksp_type": "preonly", "pc_type": "lu"}
 problem = LinearProblem(a, rhs, mpc, bcs=bcs, petsc_options=petsc_options)
 uh = problem.solve()
-
+```
+In the following we plot the solution.
+```
 # Visualization using PyVista
 cells, types, x = plot.vtk_mesh(V)
 grid = pyvista.UnstructuredGrid(cells, types, x)
 grid.point_data["u"] = uh.x.array.real
 grid.set_active_scalars("u")
-
-# Plot with surface deformation based on solution
 plotter = pyvista.Plotter()
 warped = grid.warp_by_scalar(factor=20)
 plotter.add_mesh(warped)
 plotter.add_mesh(grid, show_edges=True)
 plotter.show_axes()
-
-# Set camera position and export graphic
 plotter.camera_position = [(2.0, 2.0, 1.5), (0.5, 0.5, 0), (0, 0, 1)]
 plotter.save_graphic("poisson_periodic_scalar.pdf")
 plotter.show()
