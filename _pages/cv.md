@@ -11,7 +11,7 @@ redirect_from:
 
 ## Professional experience
 
-- Doctoral assistant at **EPFL** (2023-present), see [https://www.epfl.ch](https://www.epfl.ch)
+- Doctoral assistant at **EPFL** (2023-present), see [https://www.epfl.ch](https://www.epfl.ch/en/)
 - Simluation engineer and management member at **Team Tumbleweed** (2021-2024)
 - Visiting associate at **Boston Consulting Group** (2021)
 - Systems engineer at **RUAG Space** (2020)
