@@ -15,4 +15,4 @@ Welcome to my homepage. Here you can find information about
 
 My research field is numerical analysis, in particular theory and applications of Finite Element methods. My current focus is on constructing discretization methods for equations from fusion plasma physics.
 
-Feel free to reach out via email or Linkedin (see on the left).
+Feel free to reach out via email or Linkedin.
