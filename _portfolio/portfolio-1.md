@@ -72,7 +72,11 @@ mesh = create_unit_square(MPI.COMM_WORLD, NX, NY)
 
 # Define function space (Lagrange, degree 1)
 V = fem.functionspace(mesh, ("Lagrange", 1))
+```
 
+Now we define the Dricihlet boundary conditions at \\(y=0\\) and \\(y=1\\), i.e. on the left and right of the square. The code is standard.
+
+```
 # Tolerance for coordinate comparisons
 tol = 250 * np.finfo(default_scalar_type).resolution
 
@@ -86,6 +90,14 @@ facets = locate_entities_boundary(mesh, 1, dirichletboundary)
 topological_dofs = fem.locate_dofs_topological(V, 1, facets)
 bc = fem.dirichletbc(0., topological_dofs, V)
 bcs = [bc]
+
+```
+
+We want periodic boundary conditions at \\(x=0\\) and \\(x=1\\). This is done in three steps:
+
+1. Find the region
+
+```
 
 # Define periodic boundary and mapping
 def periodic_boundary(x):
